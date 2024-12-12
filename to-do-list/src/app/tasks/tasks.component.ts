@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {NewTaskComponent} from './new-task/new-task.component';
 
 @Component({
   selector: 'app-tasks',
-  imports: [],
+  imports: [
+    NewTaskComponent
+  ],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })

@@ -15,7 +15,7 @@ export class NewTaskComponent {
 @Output() add = new EventEmitter<{title:string, text:string}>();
 
 onSubmit () {
-  this.add.emit({title: this.enteredTitle, text:this.enteredText});
+  this.add.emit({title: this.enteredTitle, text: this.enteredText});
   this.enteredTitle = '';
   this.enteredText = '';
 }

@@ -1,11 +1,11 @@
 <form (ngSubmit)="onSubmit()">
   <div>
     <label>Title</label>
-    <input />
+    <input [(ngModel)]="enteredTitle" name="first"/>
   </div>
   <div>
     <label>Text</label>
-    <input />
+    <input [(ngModel)]="enteredText" name="second"/>
   </div>
   <button>ADD TASK</button>
 </form>
